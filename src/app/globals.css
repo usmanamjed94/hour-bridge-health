@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hb-primary: #2C3E50;
+  --color-hb-accent: #2A8C7A;
+  --color-hb-accent-hover: #238070;
+  --color-hb-dark: #1E2D3D;
+  --color-hb-light: #FAFAF8;
+  --color-hb-muted: #7A8799;
+  --color-hb-border: #E4E0DA;
+  --color-hb-light-teal: #EBF5F1;
+  --color-hb-text: #2C3E50;
+
+  --font-display: var(--font-inter-tight), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  --breakpoint-950: 950px;
+}
+
+::selection {
+  background: rgba(42, 140, 122, 0.2);
+  color: #2C3E50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Hero decorative overlays */
+.hero-overlay-grid {
+  background-image:
+    linear-gradient(rgba(42, 140, 122, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 140, 122, 0.25) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-overlay-tr {
+  top: -15%;
+  right: -5%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(42, 140, 122, 0.06) 0%, rgba(90, 125, 111, 0.03) 40%, transparent 70%);
+}
+
+.hero-overlay-bl {
+  bottom: -20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(42, 140, 122, 0.05) 0%, transparent 70%);
+}
+
